@@ -13,7 +13,7 @@ public class LibroRepository {
     private List<Libro> listaLibros = new ArrayList<>();
 
     // metodo que retorna los libros
-    public List<Libro> obteneLibros(){
+    public List<Libro> obtenerLibros(){
         return listaLibros;
     }
     
