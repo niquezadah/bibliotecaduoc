@@ -4,5 +4,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public class LibroRepository {
+
+    private List<Libro> listaLibros = new ArrayList<>();
     
 }
