@@ -9,10 +9,10 @@ import java.util.List;
 @Repository
 public class LibroRepository {
 
-    // arreglo que guardara los libros
+    // arreglo que guardara todos los libros
     private List<Libro> listaLibros = new ArrayList<>();
 
-    // metodo que retorna los libros
+    // metodo que retornara todos los libros
     public List<Libro> obtenerLibros(){
         return listaLibros;
     }
