@@ -49,7 +49,7 @@ public class LibroRepository {
         int id = 0;
         int idPosicion = 0;
 
-        for(int i = 0; i > listaLibros.size(); i++) {
+        for(int i = 0; i < listaLibros.size(); i++) {
             if(listaLibros.get(i).getId() == lib.getId()){
                 id = lib.getId()
                 idPosicion = i;
