@@ -69,8 +69,29 @@ public class LibroRepository {
 
     }
 
+    //metodo que ELIMINA un libro mediante su id
+    public void eliminar(int id) {
+        //alternativa 1
+        Libro libro = buscarPorId(id);
+        if (libro != null) {
+            listaLibros.remove(libro);
+        }
+        //alternativa 2
+        int idPosicion = 0;
+        for (int i = 0; i < listaLibros.size(); ++i) {
+            if (listaLibros.get(i).getId() == id) {
+                idPosicion = i;
+                break;
+            }
+        }
+        if (idPosicion > 0) {
+            listaLibros.removeIf(x -> x.getId() == id);
+        }
+        //otra alternativa
+        listaLibros.removeIf(x -> x.getId() == id);
 
 
+    }
 
 
 
